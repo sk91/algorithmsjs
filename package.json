@@ -1,0 +1,35 @@
+{
+  "name": "algorithmsjs",
+  "version": "0.0.1",
+  "description": "A collection of popular algorithms written in java-script for educational purposes.",
+  "keywords": [
+    "algorithms",
+    "sort"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sk91/algorithmsjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sk91/algorithmsjs/issues"
+  },
+  "author": {
+    "name": "Kovalov Maxim",
+    "email": "max.kovalov@gmail.com",
+    "url": "http://www.linkedin.com/pub/maxim-kovalov/55/142/88b"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": ""
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  }
+}
