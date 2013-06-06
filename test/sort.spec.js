@@ -30,6 +30,10 @@ describe("Sort", function () {
     sort_test(heap_sort);
   });
 
+  it("insertion sort should sort an array", function () {
+    var insertion_sort = require("../lib/sort/insertion-sort");
+    sort_test(insertion_sort);
+  });
 
 
   function sort_test(strategy) {
