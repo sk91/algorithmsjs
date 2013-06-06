@@ -11,6 +11,9 @@ describe("Sort",function(){
 		var bubble_sort=require("../lib/sort/bubble-sort");
 		expect(bubble_sort(unsorted_array))
 			.toEqual(sorted_array);
+
+		expect(unsorted_array)
+			.not.toEqual(sorted_array);
 	});
 
 
@@ -18,6 +21,9 @@ describe("Sort",function(){
 		var merge_sort=require("../lib/sort/merge-sort");
 		expect(merge_sort(unsorted_array))
 			.toEqual(sorted_array);
+
+		expect(unsorted_array)
+			.not.toEqual(sorted_array);
 	})
 
 });
