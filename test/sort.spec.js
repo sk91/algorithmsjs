@@ -25,6 +25,13 @@ describe("Sort", function () {
     sort_test(quick_sort);
   });
 
+  it('heap sort should sort an array', function () {
+    var heap_sort = require("../lib/sort/heap-sort");
+    sort_test(heap_sort);
+  });
+
+
+
   function sort_test(strategy) {
     expect(strategy(unsorted_array))
       .toEqual(sorted_array);

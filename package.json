@@ -29,7 +29,7 @@
     "jasmine-node": "*"
   },
   "scripts": {
-    "test": "jasmine-node --test-dir=test"
+    "test": "jasmine-node test"
   },
   "engines": {
     "node": ">= 0.4.0"
