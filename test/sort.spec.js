@@ -36,6 +36,12 @@ describe("Sort", function () {
   });
 
 
+  it("selection sort should sort an array", function () {
+    var selection_sort = require("../lib/sort/selection-sort");
+    sort_test(selection_sort);
+  });
+
+
   function sort_test(strategy) {
     expect(strategy(unsorted_array))
       .toEqual(sorted_array);
