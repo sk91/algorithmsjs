@@ -11,21 +11,29 @@ describe("Sort", function () {
 
   it("buble sort should sort an array", function () {
     var bubble_sort = require("../lib/sort/bubble-sort");
-
-    expect(bubble_sort(unsorted_array))
-      .toEqual(sorted_array);
-
-    expect(unsorted_array)
-      .not.toEqual(sorted_array);
+    sort_test(bubble_sort);
   });
 
 
   it('merge sort should sort an array', function () {
     var merge_sort = require("../lib/sort/merge-sort");
-    expect(merge_sort(unsorted_array))
+    sort_test(merge_sort);
+  });
+
+  it('quick sort should sort an array', function () {
+    var quick_sort = require("../lib/sort/quick-sort");
+    sort_test(quick_sort);
+  });
+
+  function sort_test(strategy) {
+    expect(strategy(unsorted_array))
       .toEqual(sorted_array);
 
     expect(unsorted_array)
       .not.toEqual(sorted_array);
-  });
+  }
 });
+
+
+
+
